@@ -1,0 +1,243 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.instagram-wrapper {
+    display: flex;
+    align-items: center;
+    width: 62%;
+    max-width: 992px;
+    margin: auto;
+    min-width: 320px;
+}
+
+.instagram-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.instagram-phone img {
+    height: 50rem;
+}
+
+.instagram-continue {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;    
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form input {
+    margin-bottom: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.form input:focus {
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    background: #efefef;
+}
+
+input[type="text"], input[type="password"] {
+    padding: 10px;
+    margin: 4px 35px;
+    position: relative;
+    height: 35px;
+    width: 71.5%;
+    font-size: 17px;
+}
+
+input::placeholder {
+    font-weight: normal;
+    font-size: 13px;
+    transition: 0.3s ease;
+}
+
+input:focus::placeholder {
+    position: absolute;
+    font-size: 10px;
+    transform: translateY(-13px);
+}
+
+form button{
+    border: none;
+    width: 71.5%;
+    height: 36px;
+    background: #86dffa;
+    padding-left: 10px;
+    margin: 11px 35px;
+    color: #fff;
+    border-radius: 3px;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    outline: none;
+    cursor: pointer;
+}
+
+form .option{
+    align-items: center;
+    color: #5a5a5a;
+    margin: 10px 148px;
+    font-weight: bold;
+    font-size: 12px;
+    position: relative;
+}
+
+form .option:before {
+    position: absolute;
+    content: '';
+    width: 94px;
+    height: 1px;
+    background: #b6b6b6;
+    left: 26px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50px;
+}
+
+form .option::after {
+    position: absolute;
+    content: '';
+    width: 97px;
+    height: 1px;
+    background: #b6b6b6;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50px;
+}
+
+.fblink{
+    margin: 15px 2px;
+    width: 190px;
+}
+
+.fblink span{
+    font-size: 18px;
+    color: #021897;
+    margin-right: 5px;
+}
+
+.fblink a {
+    font-weight: bold;
+    color: #021897;
+}
+
+.forget-id {
+    margin-bottom: 3px;
+}
+
+.forget-id a {
+    color: black;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.5rem 0;
+    margin-top: 12px;
+    border: 1px solid lightgray;
+}
+
+.group:nth-child(1) {
+    min-height: 19rem;
+}
+
+.instagram-logo {
+    height: 3rem;
+    margin-bottom: 20px;
+}
+
+.get-the-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.signup a {
+    font-weight: bold;
+    color: #68a6f7;
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1) {
+    background-image: url('./img/botton-app-store.png');
+}
+
+.app-download:nth-child(2) {
+    background-image: url('./img/botton-google-play.png');
+}
+
+@media (max-width: 1024px) {
+    .instagram-wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    .instagram-wrapper {
+        width: 90%;
+    }
+
+    .instagram-phone {
+        display: none;
+    }
+
+    .instagram-continue {
+        width: 100%;
+    }
+    
+    .group {
+        border: 1px solid transparent;
+    }
+}
